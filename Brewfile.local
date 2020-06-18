@@ -1,5 +1,2 @@
-cask 'atom'
-cask 'cloud'
-cask 'firefox'
-cask 'iterm2'
-brew 'redis'
+# add your laptop specific brew/casks
+cask "microsoft-edge"
