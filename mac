@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -x 
-
 # Welcome to the monfresh laptop script!
 # Be prepared to turn your laptop (or desktop)
 # into an awesome development machine.
