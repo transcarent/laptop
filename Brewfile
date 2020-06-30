@@ -8,16 +8,19 @@ brew "git"
 brew "heroku"
 brew "nvm"
 brew "openssl"
-brew "postgresql", restart_service: true
 brew "rbenv"
 brew "rbenv-default-gems"
 brew "readline", link: true
-brew "redis", restart_service: true
 brew "ruby-build"
 brew "ssh-copy-id"
 brew "watch"
 brew "yarn"
 brew "z"
+
+# Could be moved to docker
+#cask "docker"
+brew "postgresql", restart_service: true
+brew "redis", restart_service: true
 
 # Cask applications
 cask "chromedriver"

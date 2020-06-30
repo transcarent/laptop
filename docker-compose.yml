@@ -1,0 +1,22 @@
+version: '3.6'
+services:
+  redis:
+    image: "redis:4.0-alpine"
+    restart: always
+    command: redis-server --requirepass redispassword
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/var/lib/redis
+  postgres:
+    image: postgres:12
+    restart: always
+    ports: 
+      - "5432:5432"
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgrespassword
+volumes:
+  pg-data:
+  redis-data:
