@@ -17,7 +17,7 @@ brew "watch"
 brew "yarn"
 brew "z"
 
-# Could be moved to docker
+# Could be moved to docker, but no need yet
 #cask "docker"
 brew "postgresql", restart_service: true
 brew "redis", restart_service: true
