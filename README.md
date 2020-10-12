@@ -44,43 +44,6 @@ It should take less than 15 minutes to install (depends on your machine and
 internet connection).
 
 
-![Terminal screenshots](http://cl.ly/image/19022S0q3H1b/download/Image%202015-05-12%20at%2011.31.04%20PM.png)
-
-If you want to use the [Solarized](http://ethanschoonover.com/solarized)
-themes, run the following commands in your Terminal:
-```bash
-cd ~
-
-curl --remote-name https://raw.githubusercontent.com/tomislav/osx-terminal.app-colors-solarized/master/Solarized%20Dark.terminal
-
-curl --remote-name https://raw.githubusercontent.com/tomislav/osx-terminal.app-colors-solarized/master/Solarized%20Light.terminal
-
-open Solarized%20Dark.terminal
-
-open Solarized%20Light.terminal
-```
-
-This will add the Solarized themes to your Terminal's Profiles, and if you want to set one of them as the default, go to your Terminal's Preferences,
-click on the Settings tab, scroll down to the Solarized Profile, click on it,
-then click the Default button. When you open a new window or tab (or if you quit and relaunch Terminal), it will use the Solarized theme.
-
-If you want to try out different prompt colors other than orange and green,
-open your `.zshrc` or `.bash_profile` in Sublime Text:
-
-```sh
-subl ~/.zshrc
-```
-
-Define a new color variable using any of the 256 possible [Xterm colors](http://upload.wikimedia.org/wikipedia/commons/9/95/Xterm_color_chart.png). For example:
-
-```
-BLUE=$(tput setaf 190)
-```
-
-Then in the line that contains `PS1=`, replace `{ORANGE}` or `{GREEN}` with
-`{BLUE}`. Save the file, then open a new Terminal window or tab to see the changes.
-
-
 Customize in `~/.laptop.local` and `~/Brewfile.local`
 -----------------------------------------------------
 ```sh
