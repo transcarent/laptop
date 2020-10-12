@@ -1,33 +1,27 @@
 cask_args appdir: '/Applications'
 
-# Tap repositories
-tap 'heroku/brew'
-
 # Brew services
 brew "git"
-brew "heroku"
-brew "nvm"
+brew "go"
 brew "openssl"
-brew "rbenv"
-brew "rbenv-default-gems"
-brew "readline", link: true
-brew "ruby-build"
 brew "ssh-copy-id"
-brew "watch"
-brew "yarn"
 brew "z"
+
+# For React development
+#brew "nvm"
+#brew "yarn"
 
 # Could be moved to docker, but no need yet
 #cask "docker"
 brew "postgresql", restart_service: true
-brew "redis", restart_service: true
+#brew "redis", restart_service: true
 
 # Cask applications
-cask "chromedriver"
+#cask "chromedriver"
 cask "google-chrome"
-cask "graphiql"
 cask "iterm2"
 cask "postman"
 cask "slack"
 cask "visual-studio-code"
-cask "zoomus"
+# Using Meet for now
+#cask "zoomus"
