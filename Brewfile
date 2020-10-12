@@ -21,7 +21,8 @@ brew "postgresql", restart_service: true
 cask "google-chrome"
 cask "iterm2"
 cask "postman"
-cask "slack"
+# Browser version is less annoying
+#cask "slack"
 cask "visual-studio-code"
 # Using Meet for now
 #cask "zoomus"
