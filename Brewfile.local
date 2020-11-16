@@ -1,3 +1,4 @@
 # add your laptop specific brew/casks
 cask "microsoft-edge"
 cask "spotify"
+#cask "slack"
